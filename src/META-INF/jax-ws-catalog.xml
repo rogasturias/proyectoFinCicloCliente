@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/WSProyectoCaGuela/WSCaGuela?wsdl" uri="wsdl/localhost_8080/WSProyectoCaGuela/WSCaGuela.wsdl"/>
+    <system systemId="http://localhost:8080/WSProyectoCaGuela/WSCaGuela?xsd=1" uri="wsdl/localhost_8080/WSProyectoCaGuela/WSCaGuela.xsd_1.xsd"/>
+    <system systemId="http://192.168.1.200:8080/WSProyectoCaGuela/WSCaGuela?WSDL" uri="wsdl/192.168.1.200_8080/WSProyectoCaGuela/WSCaGuela.wsdl"/>
+    <system systemId="http://192.168.1.200:8080/WSProyectoCaGuela/WSCaGuela?xsd=1" uri="wsdl/192.168.1.200_8080/WSProyectoCaGuela/WSCaGuela.xsd_1.xsd"/>
+    <system systemId="http://192.168.1.200:8080/WSProyectoCaGuela3_1/WSCaGuela?WSDL" uri="wsdl/192.168.1.200_8080/WSProyectoCaGuela3_1/WSCaGuela.wsdl"/>
+    <system systemId="http://192.168.1.200:8080/WSProyectoCaGuela3_1/WSCaGuela?xsd=1" uri="wsdl/192.168.1.200_8080/WSProyectoCaGuela3_1/WSCaGuela.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WSProyectoCaGuela3_4/WSCaGuela?wsdl" uri="wsdl/localhost_8080/WSProyectoCaGuela3_4/WSCaGuela.wsdl"/>
+    <system systemId="http://localhost:8080/WSProyectoCaGuela3_4/WSCaGuela?xsd=1" uri="wsdl/localhost_8080/WSProyectoCaGuela3_4/WSCaGuela.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WSProyectoCaGuela3_4/CaGuela?wsdl" uri="wsdl/localhost_8080/WSProyectoCaGuela3_4/CaGuela.wsdl"/>
+    <system systemId="http://localhost:8080/WSProyectoCaGuela3_4/CaGuela?xsd=1" uri="wsdl/localhost_8080/WSProyectoCaGuela3_4/CaGuela.xsd_1.xsd"/>
+</catalog>
