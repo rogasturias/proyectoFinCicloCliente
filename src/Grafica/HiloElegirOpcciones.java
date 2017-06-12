@@ -12,7 +12,8 @@ import java.awt.Frame;
 import java.util.ArrayList;
 
 /**
- *
+ *clase que gestiona los hilos en caso de que se escoga un elegir opciones o 
+ * volver desde alguna menu
  * @author rogas
  */
 public class HiloElegirOpcciones extends Thread {

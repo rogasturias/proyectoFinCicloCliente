@@ -37,7 +37,10 @@ public class Nuevo_pedido extends javax.swing.JFrame {
         cargarPresentacion();       
      }
 
-// Metodo interno que carga los datos de presentacion de pantalla    
+/**
+ * Metodo interno que carga los datos de presentacion de pantalla    
+ * 
+ */
 private void cargarPresentacion() {
         Datos.pedidoNuevo = new Pedido();
         try {

@@ -5,7 +5,7 @@ import java.net.*;
 
 
 
-// clase que en fora de hilo se comunica con su server tcp/ip y le envia los datos para que se 
+// clase que en forma de hilo se comunica con su server tcp/ip y le envia los datos para que se 
 // gestione el envio de un mail.
 public class HiloEnviarMail extends  Thread {
 
