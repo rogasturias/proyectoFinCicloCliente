@@ -14,9 +14,9 @@ import java.awt.Frame;
  * @author rogas
  */
 public class HiloNuevoProducto extends Thread {
-    Producto producto;
-    boolean resultado;
-    Frame frame;
+    private Producto producto;
+    private boolean resultado;
+    private Frame frame;
     
     public HiloNuevoProducto(Frame frame, Producto producto) {
         this.producto = producto;
