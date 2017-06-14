@@ -15,11 +15,11 @@ import java.awt.Frame;
  * @author rogas
  */
 public class HiloActualizarPedido1 extends Thread{
-     Pedido pedido;
-     Frame frame;
+     private Pedido pedido;
+     private Frame frame;
 
     public HiloActualizarPedido1(Frame frame, Pedido pedido) {
-        System.out.println("*************************lanzado el hilo de nuevo Pedido");
+        System.out.println("*************************lanzado el hilo de actualizar Pedido");
         this.pedido=pedido;
         this.frame=frame;
     }
@@ -31,7 +31,7 @@ public class HiloActualizarPedido1 extends Thread{
             
             boolean result = MetodosWeb.MetodosWeb.actualizaPedido(pedido);
             
-            String mensaje= "No se han podido guardar los datos del pedido"+pedido.getId();
+            String mensaje= "No se han podido guardar los datos del pedido "+pedido.getId();
             if(result){
                  mensaje=" Se han guardado los datos del pedido "+pedido.getId();
                  
