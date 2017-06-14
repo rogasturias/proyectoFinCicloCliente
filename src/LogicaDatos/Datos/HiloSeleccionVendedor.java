@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class HiloSeleccionVendedor extends Thread {
 
-    Cliente vendedor;
+    private Cliente vendedor;
 
     public HiloSeleccionVendedor(Cliente vendedor) {
         this.vendedor = vendedor;
