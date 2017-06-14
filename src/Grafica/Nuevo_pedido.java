@@ -108,7 +108,7 @@ private void cargarPresentacion() {
 
         tabla.setColumnIdentifiers(new String[]{"idProducto", "Nombre", "Marca", "Precio"});// le pongo cabacera
 
-        // solo a fines de probar el codigo, deberá buscar en datos lo que debe cargar.
+        
         for (Producto p : Datos.productosParaVender) {
              String[] item = {p.getId()+"",p.getNombre(),p.getMarca(),p.getPrecioSinIva()+""};
             tabla.addRow(item);     // hago bucle y cargo todos los datos.
@@ -123,7 +123,7 @@ private void cargarPresentacion() {
         DefaultTableModel tabla = new DefaultTableModel(); // creo una tabla objeto
         tabla.setColumnIdentifiers(new String[]{"Cantidad","idProducto", "Nombre", "Marca", "Precio"});// le pongo cabacera
 
-        // solo a fines de probar el codigo, deberá buscar en datos lo que debe cargar.
+        
         for (Posicion p : Datos.posicionesNuevoPedido) {
              String[] item = {p.getCantidad()+"",p.getProducto().getId()+"",p.getProducto().getNombre(),p.getProducto().getMarca(),p.getProducto().getPrecioSinIva()+""};
             tabla.addRow(item);     // hago bucle y cargo todos los datos.
@@ -524,7 +524,7 @@ private void cargarPresentacion() {
                 Logger.getLogger(Nuevo_pedido.class.getName()).log(Level.SEVERE, null, ex);
             }
        }
-        System.out.println("************************ acabado el hilo de guardado el pedido :"+!hilo.isAlive());
+        System.out.println("************************ acabado el hilo de guardar el pedido :? "+!hilo.isAlive());
         MetodosEstaticosDialogos.avisoDialogo(this, "Aceptar", "Tu pedido con id: "+Datos.pedidoNuevo.getId()+" a "+Datos.pedidoNuevo.getVendedor().getNombre()+ " ha sido procesado ");
         new HiloEnviarMail("rogasturias@gmail.com", "nuevo pedido en marcha", "Te han realizado un nuevo pedido", Datos.VENDEDOR.getId()).start();
         new HiloEnviarMail("rogasturias@gmail.com", "nuevo pedido en marcha", "Has realizado un nuevo pedido", Datos.CLIENTE.getId()).start();
